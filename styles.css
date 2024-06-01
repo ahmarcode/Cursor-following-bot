@@ -77,3 +77,14 @@ p {
     font-size: 18px;
     color: #333;
 }
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .counter-container {
+        flex-direction: column;
+    }
+
+    .counter, .like-container {
+        max-width: 100%;
+    }
+}
