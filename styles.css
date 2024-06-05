@@ -3,6 +3,7 @@ html {
     border: 0;
     margin: 0;
 }
+
 body {
     border: 0;
     margin: 0;
@@ -22,9 +23,6 @@ body {
     z-index: 9999;
 }
 
-.stats {
-    
-}
 
 .counter-container {
     display: flex;
@@ -43,14 +41,16 @@ body {
     z-index: 9999;
 }
 
-.counter, .like-container {
+.counter,
+.like-container {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.counter:hover, .like-container:hover {
+.counter:hover,
+.like-container:hover {
     transform: translateY(-5px);
 }
 
@@ -84,7 +84,83 @@ p {
         flex-direction: column;
     }
 
-    .counter, .like-container {
+    .counter,
+    .like-container {
         max-width: 100%;
+    }
+}
+
+footer>p {
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+}
+
+/* #version-button {
+        background-color: black;
+        border-radius: 25%;
+        border: 2px solid white;
+        color: white;
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        padding: left;
+    } */
+
+
+
+
+/* CSS */
+#version-button {
+    position: absolute;
+        top: 30%;
+        right: 10%;
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#version-button:focus {
+    text-decoration: none;
+}
+
+#version-button:hover {
+    text-decoration: none;
+}
+
+#version-button:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+#version-button:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
     }
 }
