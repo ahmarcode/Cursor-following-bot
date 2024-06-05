@@ -41,16 +41,14 @@ body {
     z-index: 9999;
 }
 
-.counter,
-.like-container {
+.counter, .like-container {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.counter:hover,
-.like-container:hover {
+.counter:hover,.like-container:hover {
     transform: translateY(-5px);
 }
 
